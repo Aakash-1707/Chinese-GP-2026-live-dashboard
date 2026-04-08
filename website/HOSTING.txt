@@ -1,0 +1,23 @@
+RESIN RAW MATERIALS — NETLIFY + SUPABASE
+========================================
+
+PART A — NETLIFY
+----------------
+1. Create / open a site at https://www.netlify.com/
+2. Publish the `website` folder (drag-and-drop or Git with publish directory = `website`).
+3. `netlify.toml` sets `publish = "."` and functions under `netlify/functions`.
+4. `_redirects` maps `/` → `resin_rawmaterials_tn.html` (site home).
+
+PART B — SUPABASE
+-----------------
+1. Create a project at https://supabase.com/
+2. Project Settings → API → copy URL and anon key into `store-logic.js` (see SETUP_EMAIL_SUPABASE.txt).
+3. SQL Editor → run `supabase-setup.sql`, then any `supabase-migration-*.sql` files you need.
+4. Authentication → Users → add your admin email + password (used on the admin login form).
+
+NOTES
+-----
+- Main page: `resin_rawmaterials_tn.html` + `store-logic.js`.
+- Cart and orders use localStorage; live catalog uses Supabase when keys are set.
+- Never put the Supabase `service_role` key in client code — only the anon key.
+- Razorpay: configure Netlify env vars for the functions in `netlify/functions/`.

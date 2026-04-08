@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preserving Memories Resin Materials — Tamil Nadu</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ocean: #1A4A8A;
+    --ocean-light: #2860B0;
+    --ocean-dark: #0F2D5E;
+    --sand: #F5E6C8;
+    --sand-dark: #E8D0A0;
+    --coral: #E85D3A;
+    --coral-light: #F07A5A;
+    --cream: #FAFAF5;
+    --text: #1A1A2E;
+    --text-muted: #5A5A6E;
+    --border: #E0D8C8;
+    --white: #FFFFFF;
+    --success: #2D7D46;
+    --danger: #C0392B;
+    --font-head: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
+    --radius: 10px;
+    --radius-lg: 16px;
+    --shadow: 0 2px 16px rgba(26,74,138,0.08);
+    --shadow-md: 0 4px 24px rgba(26,74,138,0.13);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: var(--font-body); background: var(--cream); color: var(--text); min-height: 100vh; }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--ocean);
+    color: white;
+    padding: 0 1.5rem;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  }
+  .header-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 64px;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; cursor: pointer; text-decoration: none; }
+  .logo-icon {
+    width: 38px; height: 38px; background: white; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 700; color: var(--ocean);
+    font-family: var(--font-head);
+  }
+  .logo-img-wrap {
+    height: 48px; width: auto; max-width: 100px; border-radius: 10px; overflow: hidden; flex-shrink: 0;
+    border: 2px solid rgba(255,255,255,0.4); box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+    display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.12);
+  }
+  .logo-img-wrap img { height: 100%; width: auto; max-width: 100px; object-fit: contain; display: block; }
+  .logo-text { line-height: 1.2; min-width: 0; }
+  .logo-text .brand { font-family: var(--font-head); font-size: 13px; font-weight: 700; color: white; }
+  @media (min-width: 480px) { .logo-text .brand { font-size: 14px; } }
+  .logo-text .sub { font-size: 10px; color: rgba(255,255,255,0.8); letter-spacing: 0.02em; margin-top: 2px; line-height: 1.35; }
+  nav { display: flex; align-items: center; gap: 6px; }
+  nav a {
+    color: rgba(255,255,255,0.85); text-decoration: none; font-size: 14px;
+    padding: 6px 12px; border-radius: 6px; transition: background 0.2s;
+    cursor: pointer;
+    line-height: 1.25;
+  }
+  nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: white; }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 18px;
+    flex-shrink: 0;
+  }
+  .cart-btn {
+    position: relative; background: var(--coral); border: none; cursor: pointer;
+    color: white; padding: 6px 14px; border-radius: 8px; font-family: var(--font-body);
+    font-size: 14px; font-weight: 500; line-height: 1.25;
+    display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+    transition: background 0.2s;
+    min-height: 36px;
+    box-sizing: border-box;
+  }
+  .cart-btn:hover { background: var(--coral-light); }
+  .cart-count {
+    background: white; color: var(--coral); font-size: 11px; font-weight: 700;
+    min-width: 18px; height: 18px; border-radius: 50%; display: flex;
+    align-items: center; justify-content: center; padding: 0 4px;
+  }
+  .hamburger { display: none; background: none; border: none; cursor: pointer; color: white; font-size: 22px; }
+
+  /* ── PAGES ── */
+  .page { display: none; }
+  .page.active { display: block; }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* ── HOME ── */
+  .hero {
+    background: linear-gradient(135deg, var(--ocean-dark) 0%, var(--ocean) 60%, #1A5A9A 100%);
+    color: white; padding: 80px 1.5rem; text-align: center; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 80px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'%3E%3Cpath fill='%23FAFAF5' d='M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z'/%3E%3C/svg%3E") bottom/cover no-repeat;
+  }
+  .hero h1 { font-family: var(--font-head); font-size: clamp(32px, 5vw, 52px); font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
+  .hero p { font-size: 17px; opacity: 0.85; max-width: 560px; margin: 0 auto 32px; line-height: 1.6; }
+  .hero-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--coral); color: white; border: none; padding: 13px 28px;
+    border-radius: var(--radius); font-family: var(--font-body); font-size: 15px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s; text-decoration: none; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--coral-light); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(232,93,58,0.3); }
+  .btn-outline {
+    background: transparent; color: white; border: 2px solid rgba(255,255,255,0.5);
+    padding: 11px 28px; border-radius: var(--radius); font-family: var(--font-body);
+    font-size: 15px; font-weight: 500; cursor: pointer; transition: all 0.2s;
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+  /* Shop + admin list: Previous / Next (not hero outline) */
+  .pagination-btn {
+    background: var(--ocean);
+    color: var(--white);
+    border: 2px solid var(--ocean-dark);
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+  .pagination-btn:hover:not(:disabled) {
+    background: var(--ocean-light);
+    border-color: var(--ocean);
+  }
+  .pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .checkout-coupon-apply {
+    background: var(--ocean);
+    color: var(--white);
+    border: 2px solid var(--ocean-dark);
+    padding: 10px 18px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .checkout-coupon-apply:hover {
+    background: var(--ocean-light);
+    border-color: var(--ocean);
+  }
+  .checkout-coupon-remove {
+    background: var(--white);
+    color: var(--text-muted);
+    border: 2px solid var(--border);
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+  }
+  .checkout-coupon-remove:hover {
+    border-color: var(--ocean-light);
+    color: var(--ocean-dark);
+    background: var(--sand);
+  }
+
+  .trust-badges {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;
+    padding: 40px 1.5rem; background: var(--sand);
+  }
+  .badge-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 14px; font-weight: 500; color: var(--ocean-dark);
+  }
+  .badge-icon { font-size: 20px; }
+  .home-categories-wrap { padding: 38px 1.5rem 52px; }
+  .home-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px;
+  }
+  .home-cat-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
+  }
+  .home-cat-card:hover {
+    transform: translateY(-2px);
+    border-color: #d2dce9;
+    box-shadow: var(--shadow-md);
+  }
+  .home-cat-card-media {
+    height: 106px;
+    background: linear-gradient(140deg, #f4f7fb 0%, #e9f0fa 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .home-cat-card-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .home-cat-card-emoji { font-size: 42px; line-height: 1; }
+  .home-cat-card-label {
+    padding: 10px 10px 11px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ocean-dark);
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    min-height: 42px;
+  }
+
+  .section { padding: 56px 0; }
+  .section-title {
+    font-family: var(--font-head); font-size: clamp(24px, 3.5vw, 34px);
+    font-weight: 700; color: var(--ocean-dark); margin-bottom: 8px;
+  }
+  .section-subtitle { font-size: 15px; color: var(--text-muted); margin-bottom: 36px; }
+
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+  }
+  .about-text p { font-size: 15px; line-height: 1.75; color: var(--text-muted); margin-bottom: 14px; }
+  .about-img {
+    background: var(--sand); border-radius: var(--radius-lg); padding: 32px;
+    text-align: center; border: 1px solid var(--border);
+  }
+  .about-img .about-brand-img {
+    width: 100%; max-width: 300px; height: auto; display: block; margin: 0 auto;
+    border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .about-img .tagline { font-size: 14px; color: var(--ocean); font-style: italic; font-weight: 500; }
+  .about-img .unit { font-size: 11px; color: var(--text-muted); margin-top: 4px; letter-spacing: 1px; }
+
+  /* ── PRODUCTS ── */
+  .shop-header { padding: 36px 0 24px; border-bottom: 1px solid var(--border); margin-bottom: 32px; }
+  .shop-header h2 { font-family: var(--font-head); font-size: 28px; font-weight: 700; color: var(--ocean-dark); }
+  .filters { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .filter-btn {
+    padding: 6px 16px; border-radius: 20px; border: 1.5px solid var(--border);
+    background: white; font-family: var(--font-body); font-size: 13px; cursor: pointer;
+    transition: all 0.15s; color: var(--text-muted);
+  }
+  .filter-btn.active, .filter-btn:hover {
+    background: var(--ocean); color: white; border-color: var(--ocean);
+  }
+  .product-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 24px;
+  }
+  .product-card {
+    background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);
+    overflow: hidden; transition: all 0.2s; box-shadow: var(--shadow);
+  }
+  .product-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .product-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    background: var(--sand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-img img { width: 100%; height: 100%; object-fit: cover; }
+  .stock-badge {
+    position: absolute; top: 10px; right: 10px; padding: 3px 10px;
+    border-radius: 20px; font-size: 11px; font-weight: 600;
+  }
+  .in-stock { background: #D4EDDA; color: #1A5C2A; }
+  .out-stock { background: #F8D7DA; color: #7A1C1C; }
+  .product-info { padding: 14px 16px 16px; }
+  .product-category { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--coral); font-weight: 600; margin-bottom: 4px; }
+  .product-name { font-family: var(--font-head); font-size: 16px; font-weight: 600; color: var(--text); margin-bottom: 4px; line-height: 1.3; }
+  .product-desc { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .product-footer { display: flex; align-items: center; justify-content: space-between; }
+  .product-price { font-size: 20px; font-weight: 700; color: var(--ocean-dark); }
+  .product-price .price-strike { font-size: 13px; font-weight: 500; color: var(--text-muted); text-decoration: line-through; margin-right: 6px; }
+  .product-price .price-sale { font-size: 20px; font-weight: 700; color: var(--ocean-dark); }
+  .discount-badge {
+    position: absolute; top: 10px; left: 10px; padding: 3px 10px;
+    border-radius: 20px; font-size: 11px; font-weight: 700; background: #FFE8E8; color: #A12222;
+  }
+  .shop-search {
+    width: 100%; max-width: 420px; padding: 10px 12px; border-radius: 8px;
+    border: 1.5px solid var(--border); font-family: var(--font-body); font-size: 14px;
+    background: #fff;
+  }
+  .shop-toolbar {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;
+    margin: 0 0 16px; justify-content: space-between;
+  }
+  .shop-toolbar .shop-search { flex: 1; min-width: min(100%, 220px); max-width: 420px; }
+  .shop-sort-group {
+    display: flex; align-items: center; gap: 8px; flex-shrink: 0;
+  }
+  .shop-sort-group label {
+    font-size: 14px; font-weight: 600; color: var(--ocean-dark); font-family: var(--font-body);
+  }
+  .shop-sort-select {
+    padding: 10px 32px 10px 12px; border-radius: 8px; border: 1.5px solid var(--border);
+    font-family: var(--font-body); font-size: 14px; background: #fff; color: var(--text);
+    cursor: pointer; min-width: 200px; appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234a5568' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 12px center;
+  }
+  .shop-sort-select:hover { border-color: var(--ocean-light); }
+  .shop-sort-select:focus { outline: none; border-color: var(--ocean); box-shadow: 0 0 0 2px rgba(26,74,138,0.15); }
+  .add-to-cart {
+    background: var(--ocean); color: white; border: none; padding: 8px 14px;
+    border-radius: 8px; font-family: var(--font-body); font-size: 13px; font-weight: 500;
+    cursor: pointer; transition: all 0.2s;
+  }
+  .add-to-cart:hover { background: var(--ocean-light); }
+  .add-to-cart:disabled { background: #ccc; cursor: not-allowed; }
+
+  /* ── PRODUCT DETAIL ── */
+  .product-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding: 40px 0; }
+  .product-detail-img {
+    background: var(--sand); border-radius: var(--radius-lg); height: 380px;
+    display: flex; align-items: center; justify-content: center; font-size: 80px; overflow: hidden;
+  }
+  .product-detail-img img { width: 100%; height: 100%; object-fit: cover; }
+  .product-detail-info h1 { font-family: var(--font-head); font-size: 28px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .product-detail-info .price { font-size: 28px; font-weight: 700; color: var(--ocean-dark); margin: 16px 0; }
+  .product-detail-info .price .price-strike { font-size: 16px; margin-right: 8px; text-decoration: line-through; color: var(--text-muted); font-weight: 500; }
+  .product-detail-info .desc { font-size: 15px; line-height: 1.7; color: var(--text-muted); margin-bottom: 24px; }
+  .qty-row { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+  .qty-ctrl { display: flex; align-items: center; gap: 0; border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .qty-ctrl button {
+    width: 36px; height: 36px; border: none; background: var(--sand);
+    font-size: 18px; cursor: pointer; font-family: var(--font-body); transition: background 0.15s;
+  }
+  .qty-ctrl button:hover { background: var(--sand-dark); }
+  .qty-ctrl span { width: 40px; text-align: center; font-size: 16px; font-weight: 600; }
+  .btn-add-large {
+    background: var(--coral); color: white; border: none; padding: 14px 28px;
+    border-radius: var(--radius); font-family: var(--font-body); font-size: 15px; font-weight: 600;
+    cursor: pointer; transition: all 0.2s; width: 100%;
+  }
+  .btn-add-large:hover { background: var(--coral-light); }
+  .btn-add-large:disabled { background: #ccc; cursor: not-allowed; }
+  .back-link { color: var(--ocean); cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; gap: 4px; margin: 20px 0; }
+  .back-link:hover { text-decoration: underline; }
+
+  /* ── CART ── */
+  .cart-layout { display: grid; grid-template-columns: 1fr 340px; gap: 32px; padding: 40px 0; }
+  .cart-title { font-family: var(--font-head); font-size: 26px; font-weight: 700; color: var(--ocean-dark); margin-bottom: 24px; }
+  .cart-item {
+    background: white; border-radius: var(--radius); border: 1px solid var(--border);
+    padding: 16px; display: flex; gap: 16px; margin-bottom: 12px; align-items: center;
+  }
+  .cart-item-img {
+    width: 70px; height: 70px; background: var(--sand); border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; font-size: 28px;
+    flex-shrink: 0; overflow: hidden;
+  }
+  .cart-item-img img { width: 100%; height: 100%; object-fit: cover; }
+  .cart-item-info { flex: 1; }
+  .cart-item-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+  .cart-item-cat { font-size: 12px; color: var(--coral); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+  .cart-item-price { font-size: 16px; font-weight: 700; color: var(--ocean-dark); }
+  .cart-item-actions { display: flex; align-items: center; gap: 12px; }
+  .remove-btn { background: none; border: none; color: var(--danger); cursor: pointer; font-size: 18px; padding: 4px; }
+  .order-summary {
+    background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);
+    padding: 24px; height: fit-content; box-shadow: var(--shadow);
+  }
+  .order-summary h3 { font-family: var(--font-head); font-size: 20px; font-weight: 700; margin-bottom: 20px; }
+  .summary-row { display: flex; justify-content: space-between; font-size: 14px; margin-bottom: 12px; color: var(--text-muted); }
+  .summary-row.total { font-size: 18px; font-weight: 700; color: var(--text); border-top: 1px solid var(--border); padding-top: 12px; margin-top: 4px; }
+  .btn-checkout {
+    width: 100%; background: var(--ocean); color: white; border: none; padding: 14px;
+    border-radius: var(--radius); font-family: var(--font-body); font-size: 15px; font-weight: 600;
+    cursor: pointer; transition: background 0.2s; margin-top: 16px;
+  }
+  .btn-checkout:hover { background: var(--ocean-light); }
+  .empty-cart { text-align: center; padding: 80px 20px; color: var(--text-muted); }
+  .empty-cart .empty-icon { font-size: 64px; margin-bottom: 16px; }
+  .empty-cart h3 { font-family: var(--font-head); font-size: 22px; color: var(--text); margin-bottom: 8px; }
+
+  /* ── CHECKOUT ── */
+  .checkout-layout { display: grid; grid-template-columns: 1fr 340px; gap: 32px; padding: 40px 0; }
+  .checkout-title { font-family: var(--font-head); font-size: 26px; font-weight: 700; color: var(--ocean-dark); margin-bottom: 24px; }
+  .form-section { background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 24px; margin-bottom: 20px; }
+  .form-section h3 { font-size: 16px; font-weight: 600; color: var(--ocean-dark); margin-bottom: 18px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 4px; }
+  .form-group.full { grid-column: 1 / -1; }
+  .form-group label { font-size: 13px; font-weight: 500; color: var(--text-muted); }
+  .form-group input, .form-group select, .form-group textarea {
+    border: 1.5px solid var(--border); border-radius: 8px; padding: 10px 12px;
+    font-family: var(--font-body); font-size: 14px; color: var(--text);
+    transition: border-color 0.2s; outline: none; background: white;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--ocean); }
+  .btn-place-order {
+    width: 100%; background: var(--coral); color: white; border: none; padding: 15px;
+    border-radius: var(--radius); font-family: var(--font-body); font-size: 16px; font-weight: 600;
+    cursor: pointer; transition: background 0.2s; margin-top: 16px;
+  }
+  .btn-place-order:hover { background: var(--coral-light); }
+
+  /* ── ORDER CONFIRM ── */
+  .confirm-page { text-align: center; padding: 60px 20px; }
+  .confirm-icon { font-size: 72px; margin-bottom: 20px; }
+  .confirm-page h2 { font-family: var(--font-head); font-size: 32px; font-weight: 700; color: var(--ocean-dark); margin-bottom: 10px; }
+  .confirm-page p { font-size: 16px; color: var(--text-muted); margin-bottom: 6px; }
+  .order-id { display: inline-block; background: var(--sand); border: 1px solid var(--border); border-radius: 8px; padding: 6px 20px; font-family: monospace; font-size: 18px; font-weight: 700; color: var(--ocean-dark); margin: 12px 0 20px; }
+  .confirm-details { background: white; border-radius: var(--radius-lg); border: 1px solid var(--border); padding: 24px; max-width: 480px; margin: 24px auto; text-align: left; }
+  .confirm-details h4 { font-weight: 600; font-size: 15px; margin-bottom: 12px; color: var(--text); }
+  .confirm-row { display: flex; justify-content: space-between; font-size: 14px; padding: 6px 0; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+  .confirm-row:last-child { border-bottom: none; }
+  .confirm-row strong { color: var(--text); }
+
+  /* ── ADMIN ── */
+  #admin-login { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: var(--sand); }
+  .login-card {
+    background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);
+    padding: 40px; width: 100%; max-width: 400px; box-shadow: var(--shadow-md);
+  }
+  .login-card h2 { font-family: var(--font-head); font-size: 26px; font-weight: 700; color: var(--ocean-dark); margin-bottom: 6px; }
+  .login-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 28px; }
+  .login-error { background: #FFECEC; color: var(--danger); font-size: 13px; padding: 8px 12px; border-radius: 6px; margin-bottom: 14px; display: none; }
+  #admin-panel { display: none; }
+  .admin-header {
+    background: var(--ocean-dark); color: white; padding: 0 1.5rem;
+    display: flex; align-items: center; justify-content: space-between; height: 56px;
+  }
+  .admin-header .title { font-family: var(--font-head); font-size: 17px; font-weight: 700; }
+  .admin-tabs { display: flex; gap: 4px; }
+  .admin-tab {
+    padding: 8px 18px; border-radius: 6px; cursor: pointer; font-size: 13px;
+    font-weight: 500; color: rgba(255,255,255,0.7); transition: all 0.15s; background: none; border: none;
+    font-family: var(--font-body);
+  }
+  .admin-tab.active, .admin-tab:hover { background: rgba(255,255,255,0.15); color: white; }
+  .logout-btn {
+    background: rgba(255,255,255,0.12); color: white; border: none; padding: 6px 14px;
+    border-radius: 6px; cursor: pointer; font-size: 13px; font-family: var(--font-body);
+  }
+  .admin-content { max-width: 1100px; margin: 0 auto; padding: 32px 1.5rem; }
+  .admin-tab-content { display: none; }
+  .admin-tab-content.active { display: block; }
+
+  .stat-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 20px; }
+  .admin-revenue-panel {
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 18px 20px;
+    margin-bottom: 32px;
+    box-shadow: var(--shadow);
+  }
+  .admin-revenue-panel .rev-head {
+    font-family: var(--font-head);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ocean-dark);
+    margin-bottom: 12px;
+  }
+  .admin-revenue-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 12px 16px;
+    margin-bottom: 14px;
+  }
+  .admin-revenue-controls .form-group { margin: 0; min-width: 0; }
+  .admin-revenue-controls label { font-size: 12px; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 4px; }
+  .admin-revenue-controls select,
+  .admin-revenue-controls input {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    font-family: var(--font-body);
+    font-size: 13px;
+    min-width: 140px;
+  }
+  .admin-revenue-total {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px 20px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .admin-revenue-total .rev-amt { font-size: 28px; font-weight: 700; color: var(--ocean-dark); }
+  .admin-revenue-total .rev-meta { font-size: 13px; color: var(--text-muted); }
+  .stat-card {
+    background: white; border-radius: var(--radius); border: 1px solid var(--border);
+    padding: 18px 20px; box-shadow: var(--shadow);
+  }
+  .stat-card .stat-label { font-size: 12px; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+  .stat-card .stat-value { font-size: 28px; font-weight: 700; color: var(--ocean-dark); }
+  .stat-card .stat-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+  .admin-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .admin-actions h3 { font-family: var(--font-head); font-size: 20px; font-weight: 700; color: var(--ocean-dark); }
+  .btn-new {
+    background: var(--ocean); color: white; border: none; padding: 9px 20px;
+    border-radius: 8px; font-family: var(--font-body); font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .btn-new:hover { background: var(--ocean-light); }
+
+  .admin-table { width: 100%; border-collapse: collapse; background: white; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); }
+  .admin-table th { background: var(--sand); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ocean-dark); padding: 12px 14px; text-align: left; }
+  .admin-table td { padding: 12px 14px; font-size: 14px; border-top: 1px solid var(--border); vertical-align: middle; }
+  .admin-table tr:hover td { background: #FAFBFF; }
+  .table-img { width: 44px; height: 44px; border-radius: 6px; background: var(--sand); display: flex; align-items: center; justify-content: center; font-size: 20px; overflow: hidden; }
+  .table-img img { width: 100%; height: 100%; object-fit: cover; }
+  .action-btn {
+    padding: 5px 12px; border-radius: 6px; border: none; cursor: pointer;
+    font-size: 12px; font-weight: 500; font-family: var(--font-body); transition: all 0.15s;
+  }
+  .edit-btn { background: #E8F0FF; color: var(--ocean); }
+  .edit-btn:hover { background: var(--ocean); color: white; }
+  .delete-btn { background: #FFE8E8; color: var(--danger); }
+  .delete-btn:hover { background: var(--danger); color: white; }
+
+  .admin-stock-ctrl {
+    display: inline-flex; align-items: center; border: 1px solid var(--border); border-radius: 8px;
+    overflow: hidden; vertical-align: middle;
+  }
+  .admin-stock-ctrl button {
+    width: 28px; height: 28px; border: none; background: var(--sand);
+    font-size: 16px; line-height: 1; cursor: pointer; padding: 0;
+    font-family: var(--font-body); transition: background 0.15s;
+  }
+  .admin-stock-ctrl button:hover:not(:disabled) { background: var(--sand-dark); }
+  .admin-stock-ctrl button:disabled { opacity: 0.35; cursor: not-allowed; }
+  .admin-stock-ctrl .admin-stock-val {
+    min-width: 28px; text-align: center; font-size: 13px; font-weight: 700; padding: 0 6px;
+  }
+
+  .status-toggle {
+    position: relative; display: inline-block; width: 44px; height: 24px;
+  }
+  .status-toggle input { opacity: 0; width: 0; height: 0; }
+  .toggle-slider {
+    position: absolute; inset: 0; border-radius: 24px; background: #ccc;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .toggle-slider:before {
+    content: ''; position: absolute; width: 18px; height: 18px;
+    border-radius: 50%; background: white; left: 3px; top: 3px; transition: transform 0.2s;
+  }
+  input:checked + .toggle-slider { background: var(--success); }
+  input:checked + .toggle-slider:before { transform: translateX(20px); }
+
+  /* ── MODAL ── */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+    z-index: 200; align-items: center; justify-content: center; padding: 20px;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: white; border-radius: var(--radius-lg); padding: 28px;
+    width: 100%; max-width: 520px; max-height: 85vh; overflow-y: auto;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+  }
+  .modal h3 { font-family: var(--font-head); font-size: 20px; font-weight: 700; color: var(--ocean-dark); margin-bottom: 20px; }
+  .modal-footer { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+  .btn-cancel {
+    padding: 9px 20px; border-radius: 8px; border: 1.5px solid var(--border);
+    background: white; font-family: var(--font-body); font-size: 14px; cursor: pointer;
+  }
+  .btn-save {
+    padding: 9px 20px; border-radius: 8px; border: none; background: var(--ocean);
+    color: white; font-family: var(--font-body); font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  .btn-save:hover { background: var(--ocean-light); }
+
+  .order-detail-row { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; display: flex; justify-content: space-between; }
+  .order-detail-row:last-child { border-bottom: none; }
+  .order-status-select {
+    border: 1.5px solid var(--border); border-radius: 6px; padding: 5px 8px;
+    font-family: var(--font-body); font-size: 13px; color: var(--text);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--ocean-dark); color: rgba(255,255,255,0.75);
+    padding: 40px 1.5rem 24px; margin-top: 60px;
+  }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; margin-bottom: 32px; }
+  .footer-brand .brand-name { font-family: var(--font-head); font-size: 18px; font-weight: 700; color: white; margin-bottom: 8px; }
+  .footer-brand p { font-size: 13px; line-height: 1.6; }
+  .footer-col h4 { color: white; font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+  .footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,0.6); text-decoration: none; margin-bottom: 6px; cursor: pointer; }
+  .footer-col a:hover { color: white; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+  .tagline-footer { color: var(--coral-light); font-style: italic; font-size: 13px; }
+
+  /* ── CONTACT ── */
+  .contact-hero {
+    background: linear-gradient(135deg, var(--ocean-dark) 0%, var(--ocean) 55%, var(--ocean-light) 100%);
+    color: white; padding: 56px 1.5rem; text-align: center;
+  }
+  .contact-hero h1 { font-family: var(--font-head); font-size: clamp(26px, 4vw, 38px); margin-bottom: 10px; }
+  .contact-hero p { opacity: 0.9; max-width: 520px; margin: 0 auto; font-size: 15px; line-height: 1.6; }
+  .contact-layout {
+    max-width: 640px; margin: 0 auto; padding: 40px 0 56px;
+  }
+  .contact-brand-banner {
+    width: 100%; max-width: 380px; height: auto; border-radius: var(--radius-lg);
+    display: block; margin: 0 auto 24px; box-shadow: var(--shadow-md); border: 1px solid var(--border);
+  }
+  .contact-card {
+    background: white; border-radius: var(--radius-lg); border: 1px solid var(--border);
+    padding: 28px; box-shadow: var(--shadow);
+  }
+  .contact-card h2 { font-family: var(--font-head); font-size: 22px; color: var(--ocean-dark); margin-bottom: 8px; }
+  .contact-card .lead { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+  .contact-list { list-style: none; }
+  .contact-list li {
+    display: flex; gap: 12px; align-items: flex-start; padding: 14px 0;
+    border-bottom: 1px solid var(--border); font-size: 14px;
+  }
+  .contact-list li:last-child { border-bottom: none; }
+  .contact-list .ci { font-size: 20px; flex-shrink: 0; }
+  .contact-list .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 600; margin-bottom: 2px; }
+  .contact-list a { color: var(--ocean); font-weight: 600; text-decoration: none; }
+  .contact-list a:hover { text-decoration: underline; }
+  #contact-success-msg {
+    display: none; margin-top: 16px; padding: 12px 14px; border-radius: 8px;
+    background: #D4EDDA; color: #1A5C2A; font-size: 14px; font-weight: 500;
+  }
+  #contact-success-msg.show { display: block; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    .about-grid, .product-detail-grid, .cart-layout, .checkout-layout { grid-template-columns: 1fr; }
+    .home-categories-wrap { padding: 26px 1rem 38px; }
+    .home-categories-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .home-cat-card-media { height: 88px; }
+    .home-cat-card-label { font-size: 11px; letter-spacing: 0.7px; padding: 9px 8px 10px; }
+    .stat-cards { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    .form-grid { grid-template-columns: 1fr; }
+    #site-header nav {
+      display: none;
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      top: calc(100% + 8px);
+      background: var(--ocean-dark);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      padding: 8px;
+      flex-direction: column;
+      gap: 4px;
+      z-index: 120;
+    }
+    body.mobile-nav-open #site-header nav { display: flex; }
+    /* Shop + featured: exactly two cards per row on phone / small tablet */
+    .product-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .product-card .product-img { font-size: 36px; }
+    .product-card .product-info { padding: 10px 10px 12px; }
+    .product-card .product-name { font-size: 14px; }
+    .product-card .product-desc { font-size: 11px; margin-bottom: 8px; }
+    .product-card .product-footer { flex-wrap: wrap; gap: 8px; }
+    .product-card .product-price { font-size: 17px; }
+    .product-card .product-price .price-sale { font-size: 17px; }
+    .product-card .add-to-cart { padding: 7px 10px; font-size: 12px; }
+    .product-card .stock-badge { font-size: 10px; padding: 2px 7px; }
+    .product-card .discount-badge { font-size: 10px; padding: 2px 7px; }
+    #site-header nav a {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 8px;
+    }
+    .hamburger { display: block; }
+    #site-header { position: sticky; }
+    .header-inner { position: relative; }
+    .admin-header {
+      height: auto;
+      min-height: 56px;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 10px 12px;
+      flex-wrap: wrap;
+    }
+    .admin-header .title {
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+    .admin-tabs {
+      display: flex;
+      width: 100%;
+      gap: 6px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 2px;
+    }
+    .admin-tab {
+      flex: 0 0 auto;
+      padding: 8px 14px;
+      white-space: nowrap;
+    }
+  }
+  @media (max-width: 480px) {
+    .stat-cards { grid-template-columns: 1fr; }
+  }
+
+  /* ── TOAST ── */
+  #toast {
+    position: fixed; bottom: 24px; right: 24px; background: var(--ocean-dark);
+    color: white; padding: 12px 20px; border-radius: 10px; font-size: 14px;
+    font-weight: 500; z-index: 999; transform: translateY(80px); opacity: 0;
+    transition: all 0.3s; pointer-events: none; box-shadow: var(--shadow-md);
+  }
+  #toast.show { transform: translateY(0); opacity: 1; }
+  .policy-fab {
+    position: fixed;
+    left: 18px;
+    bottom: 20px;
+    z-index: 998;
+    border: none;
+    border-radius: 999px;
+    background: #173d73;
+    color: #fff;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  }
+  .policy-list { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 10px; font-size: 14px; color: var(--text); line-height: 1.55; }
+  .policy-list li { padding-left: 2px; }
+  @media (max-width: 480px) {
+    .policy-fab { left: 12px; right: 12px; bottom: 12px; border-radius: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-inner">
+    <div class="logo" onclick="navigate('home')" title="Preserving Memories Resin Materials">
+      <div class="logo-img-wrap"><img src="assets/pm-resin-brand.png" alt="" width="100" height="48" decoding="async" /></div>
+      <div class="logo-text">
+        <div class="brand">Preserving Memories Resin Materials</div>
+        <div class="sub">One-Stop Destination for All Your Resin Needs</div>
+      </div>
+    </div>
+    <nav>
+      <a onclick="navigate('home')" id="nav-home">Home</a>
+      <a onclick="navigate('shop')" id="nav-shop">Shop</a>
+      <a onclick="navigate('about')" id="nav-about">About</a>
+      <a onclick="navigate('contact')" id="nav-contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="cart-btn" onclick="navigate('cart')">
+        🛒 Cart <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button type="button" class="hamburger" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- TOAST -->
+<div id="toast"></div>
+<button type="button" id="policy-fab" class="policy-fab" onclick="openPolicyModal()">Important Order Info</button>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div style="text-align:center;margin-bottom:20px;">
+      <img src="assets/pm-resin-brand.png" alt="Preserving Memories Resin Materials" width="400" height="400" decoding="async" style="max-width:min(360px,88vw);height:auto;border-radius:14px;box-shadow:0 10px 36px rgba(0,0,0,0.22);" />
+    </div>
+    <h1>Premium Resin Art Supplies<br>for Every Creator</h1>
+    <p>High-quality resin raw materials for artists, jewelers, crafters and small businesses across Tamil Nadu.</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="navigate('shop')">Shop Now</button>
+      <button class="btn-outline" onclick="navigate('about')">Our Story</button>
+      <button class="btn-outline" onclick="navigate('contact')">Contact</button>
+    </div>
+  </div>
+
+  <div class="trust-badges">
+    <div class="badge-item"><span class="badge-icon">✓</span> Premium Quality Materials</div>
+    <div class="badge-item"><span class="badge-icon">₹</span> Fair & Transparent Pricing</div>
+    <div class="badge-item"><span class="badge-icon">⚡</span> Fast Dispatch</div>
+    <div class="badge-item"><span class="badge-icon">🎨</span> Artist-Focused</div>
+    <div class="badge-item"><span class="badge-icon">📦</span> Carefully Packed Orders</div>
+  </div>
+
+  <div class="home-categories-wrap">
+    <div class="container">
+      <div class="section-title" style="font-size:clamp(20px,2.6vw,30px);margin-bottom:6px;">Shop by Category</div>
+      <div class="section-subtitle" style="margin-bottom:18px;">Tap a category to browse matching products</div>
+      <div id="home-category-grid" class="home-categories-grid"></div>
+    </div>
+  </div>
+
+  <!-- Featured Products -->
+  <div class="section" style="background:white;">
+    <div class="container">
+      <div class="section-title">Featured Products</div>
+      <div class="section-subtitle">Mark up to 10 products as featured in Admin → Products. If none are set, we show six in-stock items here.</div>
+      <div class="product-grid" id="featured-grid"></div>
+      <div style="text-align:center;margin-top:32px;">
+        <button class="btn-primary" onclick="navigate('shop')">View All Products</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Snippet -->
+  <div class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="assets/pm-resin-brand.png" alt="Preserving Memories Resin Materials" class="about-brand-img" decoding="async" />
+          <div class="tagline" style="margin-top:14px;text-align:center;">One-Stop Destination for All Your Resin Needs</div>
+        </div>
+        <div class="about-text">
+          <div class="section-title">Who We Are</div>
+          <p>We are a dedicated supplier of high-quality resin raw materials, specially focused on the needs of artists and creators across Tamil Nadu.</p>
+          <p>Our mission is to provide reliable, premium materials that help bring creative ideas to life — from resin art and jewelry making to coatings, molds, and other creative applications.</p>
+          <p>Our products are chosen for their clarity, durability, and consistent performance so artists can achieve the best results in every project.</p>
+          <button class="btn-primary" onclick="navigate('about')" style="margin-top:8px;">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== SHOP PAGE ==================== -->
+<div id="page-shop" class="page">
+  <div class="container">
+    <div class="shop-header">
+      <h2>All Products</h2>
+      <div class="filters" id="filter-btns"></div>
+    </div>
+    <div class="shop-toolbar">
+      <input type="search" id="shop-search-input" class="shop-search" placeholder="Search products by name, category, or description..." oninput="setSearchQuery(this.value)">
+      <div class="shop-sort-group">
+        <label for="shop-sort-select">Sort</label>
+        <select id="shop-sort-select" class="shop-sort-select" aria-label="Sort products" onchange="onShopSortChange(this.value)">
+          <option value="name-asc">Name A–Z</option>
+          <option value="name-desc">Name Z–A</option>
+          <option value="price-asc">Price ↑</option>
+          <option value="price-desc">Price ↓</option>
+          <option value="stock-asc">Stock ↑</option>
+          <option value="stock-desc">Stock ↓</option>
+          <option value="cat-asc">Category A–Z</option>
+        </select>
+      </div>
+    </div>
+    <div class="product-grid" id="shop-grid"></div>
+    <div id="shop-pagination"></div>
+  </div>
+</div>
+
+<!-- ==================== PRODUCT DETAIL PAGE ==================== -->
+<div id="page-detail" class="page">
+  <div class="container">
+    <div class="back-link" onclick="navigate('shop')">← Back to Shop</div>
+    <div class="product-detail-grid">
+      <div class="product-detail-img" id="detail-img"></div>
+      <div class="product-detail-info">
+        <div class="product-category" id="detail-cat"></div>
+        <h1 id="detail-name"></h1>
+        <div id="detail-stock-badge" style="margin:8px 0;"></div>
+        <div id="detail-variant-wrap" style="display:none;margin:12px 0;">
+          <label for="detail-variant" style="display:block;font-size:13px;margin-bottom:6px;color:var(--text-muted);">Size / option</label>
+          <select id="detail-variant" class="shop-search" style="max-width:min(360px,100%);padding:10px 12px;" onchange="onDetailVariantChange()"></select>
+        </div>
+        <div class="price" id="detail-price"></div>
+        <div class="desc" id="detail-desc"></div>
+        <div class="qty-row">
+          <div class="qty-ctrl">
+            <button onclick="changeDetailQty(-1)">−</button>
+            <span id="detail-qty">1</span>
+            <button onclick="changeDetailQty(1)">+</button>
+          </div>
+          <span style="font-size:14px;color:var(--text-muted);">Quantity</span>
+        </div>
+        <button class="btn-add-large" id="detail-add-btn" onclick="addDetailToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ABOUT PAGE ==================== -->
+<div id="page-about" class="page">
+  <div class="hero" style="padding:60px 1.5rem;">
+    <h1 style="font-size:clamp(28px,4vw,42px);">About Us</h1>
+    <p>Dedicated to empowering artists across Tamil Nadu</p>
+  </div>
+  <div class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-title">Our Story</div>
+          <p>We are a dedicated supplier of high-quality resin raw materials, specially focused on the needs of artists and creators. Our mission is to provide reliable, premium materials that help bring creative ideas to life.</p>
+          <p>We supply carefully selected resin materials suitable for <strong>resin art, jewelry making, coating, molds,</strong> and other creative applications. Our products are chosen for their clarity, durability, and consistent performance so artists can achieve the best results in every project.</p>
+          <p>With a commitment to quality, fair pricing, and dependable supply, we aim to support artists, small businesses, and craft enthusiasts with the materials they need to create beautiful resin artwork.</p>
+          <p>We are proud to be <strong>a unit of Preserving Memories</strong> — a brand built on the belief that every creation tells a story worth keeping.</p>
+        </div>
+        <div class="about-img">
+          <img src="assets/pm-resin-brand.png" alt="Preserving Memories Resin Materials" class="about-brand-img" decoding="async" />
+          <div class="unit" style="margin-top:8px;">Tamil Nadu</div>
+          <div class="tagline" style="margin-top:12px;text-align:center;">One-Stop Destination for All Your Resin Needs</div>
+          <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;text-align:left;">
+            <div style="background:white;border-radius:8px;padding:12px;border:1px solid var(--border);">
+              <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Speciality</div>
+              <div style="font-size:13px;font-weight:600;color:var(--ocean-dark);margin-top:3px;">Resin Art Supplies</div>
+            </div>
+            <div style="background:white;border-radius:8px;padding:12px;border:1px solid var(--border);">
+              <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.5px;">Location</div>
+              <div style="font-size:13px;font-weight:600;color:var(--ocean-dark);margin-top:3px;">Tamil Nadu, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== STORE POLICY PAGE ==================== -->
+<div id="page-policy" class="page">
+  <div class="container" style="padding:36px 1.5rem 56px;max-width:760px;">
+    <div class="back-link" onclick="navigate('home')">← Back to Home</div>
+    <h1 style="font-family:var(--font-head);font-size:clamp(26px,3.5vw,34px);color:var(--ocean-dark);margin:20px 0 8px;">Store policy</h1>
+    <p style="font-size:14px;color:var(--text-muted);margin:0 0 22px;line-height:1.5;">Please read before placing an order.</p>
+    <div style="background:white;border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px 26px;box-shadow:var(--shadow);">
+      <ul style="margin:0;padding-left:1.25rem;line-height:1.65;font-size:15px;color:var(--text);">
+        <li style="margin-bottom:12px;">An uncut 360° unboxing video* is mandatory to claim any refund for missing items or related issues.</li>
+        <li style="margin-bottom:12px;">The video must clearly show all sides of the package and contents, and must be recorded from the beginning of the unboxing process.</li>
+        <li style="margin-bottom:12px;">If any item is missing, we will issue a refund only. We will not reship the item. You may place a new order if needed.</li>
+        <li style="margin-bottom:12px;">No claims will be accepted without a clear unboxing video.</li>
+        <li style="margin-bottom:12px;">We do not offer exchange or return under any circumstances.</li>
+        <li style="margin-bottom:12px;">Claims raised after a few days of delivery will not be entertained.</li>
+        <li style="margin-bottom:12px;">No warranty is provided for machinery or lights.</li>
+        <li style="margin-bottom:12px;">We do not guarantee against transit damage.</li>
+        <li style="margin-bottom:0;">Please ensure that your shipping address is accurate when placing an order. If a package is returned due to incorrect details, reshipping charges must be paid by the customer.</li>
+      </ul>
+      <p style="margin:22px 0 0;font-weight:600;font-size:14px;color:var(--ocean-dark);line-height:1.5;">Kindly place your order only after reviewing and agreeing to the above terms.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<div id="page-contact" class="page">
+  <div class="contact-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Questions about resin, bulk orders, or delivery across Tamil Nadu? Reach us on WhatsApp, phone, Instagram, or email.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="contact-layout">
+      <div class="contact-card">
+        <img src="assets/pm-resin-brand.png" alt="" class="contact-brand-banner" decoding="async" />
+        <h2>Get in touch</h2>
+        <p class="lead">We’re happy to help with product advice, stock checks, and orders. WhatsApp is usually the fastest way to reach us.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="ci" aria-hidden="true">📷</span>
+            <div>
+              <div class="lbl">Instagram</div>
+              <a href="https://www.instagram.com/pm.resinmaterials/" target="_blank" rel="noopener noreferrer">@pm.resinmaterials</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true">📞</span>
+            <div>
+              <div class="lbl">Phone</div>
+              <a href="tel:+917695976223">+91 76959 76223</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true">💬</span>
+            <div>
+              <div class="lbl">WhatsApp</div>
+              <a href="https://wa.me/917695976223" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true">✉️</span>
+            <div>
+              <div class="lbl">Email</div>
+              <a href="mailto:preservingmemories2022@gmail.com">preservingmemories2022@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true">📍</span>
+            <div>
+              <div class="lbl">Location</div>
+              <div>Tamil Nadu, India — serving artists &amp; businesses statewide. Dispatch &amp; pickup details are shared on order confirmation.</div>
+            </div>
+          </li>
+          <li>
+            <span class="ci" aria-hidden="true">🕐</span>
+            <div>
+              <div class="lbl">Hours</div>
+              <div>Mon–Sat, 10:00 AM – 6:00 PM IST</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CART PAGE ==================== -->
+<div id="page-cart" class="page">
+  <div class="container">
+    <div class="cart-layout">
+      <div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;">
+          <div class="cart-title">Your Cart</div>
+          <button class="btn-outline" type="button" style="background:white;color:var(--ocean);border:1.5px solid var(--ocean);padding:8px 14px;font-size:13px;" onclick="navigate('shop')">← Back to Shop</button>
+        </div>
+        <div id="cart-items-list"></div>
+      </div>
+      <div id="cart-summary-panel"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CHECKOUT PAGE ==================== -->
+<div id="page-checkout" class="page">
+  <div class="container">
+    <div class="checkout-layout">
+      <div>
+        <div class="checkout-title">Checkout</div>
+        <div class="form-section">
+          <h3>Customer Information</h3>
+          <div class="form-grid">
+            <div class="form-group"><label>Full Name *</label><input type="text" id="co-name" placeholder="Your full name"></div>
+            <div class="form-group"><label>Phone Number *</label><input type="tel" id="co-phone" placeholder="+91 76959 76223"></div>
+            <div class="form-group"><label>Email Address *</label><input type="email" id="co-email" placeholder="preservingmemories2022@gmail.com"></div>
+            <div class="form-group"><label>PIN Code *</label><input type="text" id="co-pin" placeholder="600001"></div>
+            <div class="form-group full"><label>Address Line 1 *</label><input type="text" id="co-addr1" placeholder="Door no, Street name"></div>
+            <div class="form-group"><label>City *</label><input type="text" id="co-city" placeholder="Chennai"></div>
+            <div class="form-group"><label>State *</label><input type="text" id="co-state" value="Tamil Nadu" placeholder="Tamil Nadu" oninput="refreshCheckoutTotals()" onchange="refreshCheckoutTotals()"></div>
+          </div>
+          <p id="co-weight-note" style="font-size:12px;color:var(--text-muted);margin:0 0 12px;line-height:1.45;"></p>
+          <div class="form-group full" style="margin-bottom:12px;">
+            <label>Coupon code</label>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+              <input type="text" id="co-coupon-input" placeholder="Enter code" autocomplete="off" style="flex:1;min-width:140px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;">
+              <button type="button" class="checkout-coupon-apply" onclick="void applyCheckoutCoupon()">Apply</button>
+              <button type="button" class="checkout-coupon-remove" onclick="clearCheckoutCoupon()">Remove</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3>Payment</h3>
+          <p style="font-size:13px;color:var(--text-muted);line-height:1.55;margin:0;">Checkout opens Razorpay’s secure page (UPI, cards, netbanking, wallets). Your order is saved as pending until payment succeeds; the cart clears only after a successful payment.</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="order-summary" style="position:sticky;top:80px;">
+          <h3>Order Summary</h3>
+          <div id="checkout-items-summary"></div>
+          <div class="summary-row"><span>Subtotal</span><span id="co-subtotal">₹0</span></div>
+          <div class="summary-row" id="co-discount-row" style="display:none;color:#2d6a4f;"><span>Discount</span><span id="co-discount">₹0</span></div>
+          <div class="summary-row"><span>Shipping</span><span id="co-shipping">₹0</span></div>
+          <div class="summary-row total"><span>Total to pay</span><span id="co-total">₹0</span></div>
+          <div style="font-size:11px;color:var(--text-muted);margin-top:8px;">Minimum order amount: ₹200 (before coupon, excluding shipping)</div>
+          <label style="display:flex;align-items:flex-start;gap:8px;margin-top:10px;font-size:12px;color:var(--text-muted);line-height:1.4;">
+            <input type="checkbox" id="co-policy-ack" style="margin-top:2px;">
+            <span>I have read the order policy (dispatch timing, custom orders, unboxing claim rule, and no COD/return/refund/exchange).</span>
+          </label>
+          <button class="btn-place-order" onclick="void placeOrder()">Pay with Razorpay →</button>
+          <div style="font-size:11px;color:var(--text-muted);text-align:center;margin-top:10px;">By placing order, you agree to our terms of service and order policy.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ORDER CONFIRM PAGE ==================== -->
+<div id="page-confirm" class="page">
+  <div class="container">
+    <div class="confirm-page">
+      <div class="confirm-icon">✅</div>
+      <h2>Order confirmed</h2>
+      <p>Thank you — your payment was successful and we have your order.</p>
+      <div class="order-id" id="confirm-order-id">#PM-3190</div>
+      <p style="font-size:14px;color:var(--text-muted);">We will email you a confirmation shortly.</p>
+      <div class="confirm-details" id="confirm-details-block"></div>
+      <button class="btn-primary" onclick="navigate('shop')" style="margin-top:20px;">Continue Shopping</button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== FOOTER ==================== -->
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-name">Preserving Memories Resin Materials</div>
+        <p>A unit of Preserving Memories. Supplying premium resin art supplies to artists, crafters and creators across Tamil Nadu.</p>
+        <div class="tagline-footer" style="margin-top:12px;">One-Stop Destination for All Your Resin Needs</div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a onclick="navigate('home')">Home</a>
+        <a onclick="navigate('shop')">Shop</a>
+        <a onclick="navigate('about')">About Us</a>
+        <a onclick="navigate('contact')">Contact</a>
+        <a onclick="navigate('cart')">Cart</a>
+        <a onclick="navigate('policy')">Store policy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="https://www.instagram.com/pm.resinmaterials/" target="_blank" rel="noopener noreferrer">Instagram @pm.resinmaterials</a>
+        <a href="tel:+917695976223">+91 76959 76223</a>
+        <a href="https://wa.me/917695976223" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="mailto:preservingmemories2022@gmail.com">preservingmemories2022@gmail.com</a>
+        <span style="display:block;font-size:12px;color:rgba(255,255,255,0.5);margin-top:8px;line-height:1.5;">Mon–Sat · 10am–6pm IST<br>Tamil Nadu, India</span>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <div id="footer-categories-links"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Preserving Memories Resin Materials. All rights reserved.</span>
+      <span>Made with ❤️ for artists</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== ADMIN LOGIN ==================== -->
+<div id="admin-login" style="display:none;">
+  <div class="login-card">
+    <h2>Admin Panel</h2>
+    <p>Sign in to manage products and orders. <strong>For the live website,</strong> use your <strong>Supabase admin email and password</strong> (same as Authentication → Users). The legacy <code>admin</code> login only works when the store is not using the online catalog.</p>
+    <div class="login-error" id="login-error">Invalid username or password.</div>
+    <div class="form-group" style="margin-bottom:14px;"><label>Email / username</label><input type="text" id="admin-user" placeholder="admin or you@email.com" autocomplete="username"></div>
+    <div class="form-group" style="margin-bottom:20px;"><label>Password</label><input type="password" id="admin-pass" placeholder="••••••••" onkeydown="if(event.key==='Enter')void doLogin()"></div>
+    <button class="btn-primary" style="width:100%;" onclick="void doLogin()">Sign In</button>
+    <div style="text-align:center;margin-top:14px;"><a onclick="navigate('home')" style="font-size:13px;color:var(--ocean);cursor:pointer;">← Back to Store</a></div>
+  </div>
+</div>
+
+<!-- ==================== ADMIN PANEL ==================== -->
+<div id="admin-panel">
+  <div class="admin-header">
+    <div class="title">🛠 Admin Panel — Preserving Memories Resin Materials</div>
+    <div class="admin-tabs">
+      <button type="button" class="admin-tab active" data-admin-tab="dashboard" onclick="adminTab('dashboard')">Dashboard</button>
+      <button type="button" class="admin-tab" data-admin-tab="products" onclick="adminTab('products')">Products</button>
+      <button type="button" class="admin-tab" data-admin-tab="orders" onclick="adminTab('orders')">Orders</button>
+      <button type="button" class="admin-tab" data-admin-tab="instore" onclick="adminTab('instore')">Instore Pickup</button>
+      <button type="button" class="admin-tab" data-admin-tab="coupons" onclick="adminTab('coupons')">Coupons</button>
+      <button type="button" class="admin-tab" data-admin-tab="messages" onclick="adminTab('messages')">Messages</button>
+    </div>
+    <button class="logout-btn" onclick="adminLogout()">Logout</button>
+  </div>
+
+  <div class="admin-content">
+    <!-- Dashboard -->
+    <div class="admin-tab-content active" id="admin-dashboard">
+      <div class="stat-cards" id="stat-cards"></div>
+      <div class="admin-revenue-panel" id="admin-revenue-panel">
+        <div class="rev-head">Revenue (filtered)</div>
+        <p style="font-size:12px;color:var(--text-muted);margin:-6px 0 12px;line-height:1.45;">Totals below use only the period and status you choose. Other dashboard stats are unchanged.</p>
+        <div class="admin-revenue-controls">
+          <div class="form-group">
+            <label for="admin-revenue-period">Period</label>
+            <select id="admin-revenue-period" onchange="onAdminRevenueFilterChange()">
+              <option value="all">All time</option>
+              <option value="day">Single day</option>
+              <option value="month">Month</option>
+              <option value="year">Year</option>
+            </select>
+          </div>
+          <div class="form-group" id="admin-revenue-day-wrap" style="display:none;">
+            <label for="admin-revenue-day">Date</label>
+            <input type="date" id="admin-revenue-day" onchange="onAdminRevenueFilterChange()">
+          </div>
+          <div class="form-group" id="admin-revenue-month-wrap" style="display:none;">
+            <label for="admin-revenue-month">Month</label>
+            <input type="month" id="admin-revenue-month" onchange="onAdminRevenueFilterChange()">
+          </div>
+          <div class="form-group" id="admin-revenue-year-wrap" style="display:none;">
+            <label for="admin-revenue-year">Year</label>
+            <input type="number" id="admin-revenue-year" min="2020" max="2100" step="1" placeholder="e.g. 2026" oninput="onAdminRevenueFilterChange()" onchange="onAdminRevenueFilterChange()">
+          </div>
+          <div class="form-group">
+            <label for="admin-revenue-status">Order status</label>
+            <select id="admin-revenue-status" onchange="onAdminRevenueFilterChange()">
+              <option value="__pipeline__">Confirmed / Paid / Shipped / Delivered</option>
+              <option value="__any__">Any status</option>
+              <option value="Pending payment">Pending payment</option>
+              <option value="Pending">Pending</option>
+              <option value="Paid">Paid</option>
+              <option value="Confirmed">Confirmed</option>
+              <option value="Shipped">Shipped</option>
+              <option value="Delivered">Delivered</option>
+              <option value="Cancelled">Cancelled</option>
+            </select>
+          </div>
+        </div>
+        <div class="admin-revenue-total">
+          <span class="rev-amt" id="admin-revenue-value">₹0</span>
+          <span class="rev-meta" id="admin-revenue-count">0 orders</span>
+        </div>
+        <div class="rev-meta" id="admin-revenue-sub" style="margin-top:8px;"></div>
+      </div>
+      <div style="background:white;border-radius:var(--radius);border:1px solid var(--border);padding:20px;">
+        <h3 style="font-family:var(--font-head);font-size:18px;font-weight:700;color:var(--ocean-dark);margin-bottom:16px;">Recent Orders</h3>
+        <table class="admin-table" id="recent-orders-table">
+          <thead><tr><th>Order ID</th><th>Customer</th><th>Items</th><th>Total</th><th>Payment</th><th>Status</th></tr></thead>
+          <tbody id="recent-orders-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <div class="admin-tab-content" id="admin-products">
+      <div class="admin-actions">
+        <h3>Products</h3>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+          <input type="number" id="bulk-sale-pct" min="0" max="95" step="1" placeholder="Sale %"
+                 style="width:92px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;">
+          <button class="btn-new" type="button" onclick="void applyBulkSaleDiscount()">Apply To Selected</button>
+          <button class="btn-new" type="button" style="background:#8a97a8;" onclick="void clearBulkSaleDiscount()">Clear Selected Sale</button>
+          <button class="btn-new" onclick="openProductModal()">+ Add Product</button>
+        </div>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:12px;padding:12px;background:var(--sand);border-radius:10px;border:1px solid var(--border);">
+        <input type="search" id="admin-product-search" placeholder="Search name, category…" oninput="onAdminProductSearchInput(this.value)"
+               style="flex:1;min-width:200px;padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;">
+        <label style="font-size:12px;color:var(--text-muted);display:flex;align-items:center;gap:6px;">
+          Sort
+          <select id="admin-product-sort" onchange="onAdminProductSortChange(this.value)" style="padding:8px 10px;border-radius:8px;border:1px solid var(--border);font-size:13px;">
+            <option value="name-asc">Name A–Z</option>
+            <option value="name-desc">Name Z–A</option>
+            <option value="price-asc">Price ↑</option>
+            <option value="price-desc">Price ↓</option>
+            <option value="stock-asc">Stock ↑</option>
+            <option value="stock-desc">Stock ↓</option>
+            <option value="cat-asc">Category A–Z</option>
+          </select>
+        </label>
+      </div>
+      <div id="admin-products-page-info" style="font-size:12px;color:var(--text-muted);margin-bottom:8px;"></div>
+      <table class="admin-table">
+        <thead><tr><th><input type="checkbox" id="products-select-all" onchange="toggleAllSaleSelection(this.checked)" title="Select all"></th><th>Image</th><th>Name</th><th>Category</th><th>Price</th><th>Stock Qty</th><th>Featured</th><th>Actions</th></tr></thead>
+        <tbody id="products-tbody"></tbody>
+      </table>
+      <div id="admin-products-pagination" style="display:flex;justify-content:center;gap:10px;align-items:center;margin-top:12px;flex-wrap:wrap;"></div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px;margin-top:16px;">
+        <h4 style="margin:0 0 6px;font-size:16px;color:var(--ocean-dark);">Home Categories (Images + Add)</h4>
+        <p style="margin:0 0 12px;font-size:12px;color:var(--text-muted);line-height:1.5;">Add new categories and set the image shown on the home category tiles. Shop filters will also use these categories.</p>
+
+        <div style="display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap;margin-bottom:14px;">
+          <div class="form-group" style="margin:0;min-width:180px;">
+            <label style="margin-bottom:6px;display:block;font-size:12px;color:var(--text-muted);">Category Name *</label>
+            <input type="text" id="new-category-name" placeholder="e.g. Resin" style="width:100%;">
+          </div>
+          <div class="form-group" style="margin:0;min-width:220px;">
+            <label style="margin-bottom:6px;display:block;font-size:12px;color:var(--text-muted);">Image URL (optional)</label>
+            <input type="text" id="new-category-img-url" placeholder="https://..." style="width:100%;">
+          </div>
+          <div class="form-group" style="margin:0;min-width:190px;">
+            <label style="margin-bottom:6px;display:block;font-size:12px;color:var(--text-muted);">Upload Image (optional)</label>
+            <input type="file" id="new-category-img-file" accept="image/*" style="width:100%;">
+          </div>
+          <button class="btn-new" type="button" style="height:40px;" onclick="void addNewCategory()">Add Category</button>
+        </div>
+
+        <div id="admin-category-images-list"></div>
+      </div>
+    </div>
+
+    <!-- Coupons -->
+    <div class="admin-tab-content" id="admin-coupons">
+      <div class="admin-actions"><h3>Discount coupons</h3></div>
+      <p style="font-size:12px;color:var(--text-muted);line-height:1.5;margin:0 0 14px;">Requires Supabase migrations in order: <code>supabase-migration-categories-coupons.sql</code>, <code>supabase-migration-coupon-redemptions-max-uses.sql</code>, then <code>supabase-migration-coupon-cap-exclusions.sql</code> (max discount cap + excluded products on coupons). Without them, coupons are limited or stored in this browser only (local).</p>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px;">
+        <h4 style="margin:0 0 12px;font-size:15px;">Add / edit coupon</h4>
+        <div class="form-grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;">
+          <div class="form-group" style="margin:0;"><label style="font-size:12px;">Code *</label><input type="text" id="coupon-form-code" placeholder="SAVE10" style="width:100%;"></div>
+          <div class="form-group" style="margin:0;"><label style="font-size:12px;">Type *</label>
+            <select id="coupon-form-kind" style="width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);">
+              <option value="percent">Percent off</option>
+              <option value="fixed">Fixed ₹ off</option>
+            </select>
+          </div>
+          <div class="form-group" style="margin:0;"><label style="font-size:12px;">Amount *</label><input type="number" id="coupon-form-amount" min="0" step="1" placeholder="10" style="width:100%;"></div>
+          <div class="form-group" style="margin:0;"><label style="font-size:12px;">Min subtotal (₹)</label><input type="number" id="coupon-form-min" min="0" step="1" placeholder="0" style="width:100%;"></div>
+          <div class="form-group" style="margin:0;"><label style="font-size:12px;">Max uses</label><input type="number" id="coupon-form-max-uses" min="1" step="1" placeholder="Unlimited" style="width:100%;" title="Leave blank for unlimited redemptions (paid orders)."></div>
+          <div class="form-group" style="margin:0;"><label style="font-size:12px;">Max discount (₹ cap)</label><input type="number" id="coupon-form-max-discount-rs" min="0" step="1" placeholder="No cap" style="width:100%;" title="Optional. Caps total discount in rupees (e.g. 20% off but at most ₹200)."></div>
+          <div class="form-group" style="margin:0;display:flex;align-items:flex-end;"><label style="display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;"><input type="checkbox" id="coupon-form-active" checked> Active</label></div>
+        </div>
+        <div style="margin-top:14px;padding-top:14px;border-top:1px solid var(--border);">
+          <label style="font-size:12px;font-weight:600;color:var(--ocean-dark);display:block;margin-bottom:6px;">Does not apply to (excluded products)</label>
+          <p style="font-size:11px;color:var(--text-muted);margin:0 0 8px;line-height:1.45;">Discount counts only toward other items. Min. subtotal is checked against eligible total.</p>
+          <div id="coupon-form-excluded-list" style="max-height:200px;overflow-y:auto;padding:10px;border:1px solid var(--border);border-radius:8px;background:var(--sand);"></div>
+        </div>
+        <button type="button" class="btn-new" style="margin-top:12px;" onclick="void saveCouponFromAdminForm()">Save coupon</button>
+      </div>
+      <table class="admin-table">
+        <thead><tr><th>Code</th><th>Type</th><th>Amount</th><th>Min ₹</th><th>Cap ₹</th><th>Excl.</th><th>Active</th><th>Uses</th><th></th></tr></thead>
+        <tbody id="coupons-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- Instore pickup -->
+    <div class="admin-tab-content" id="admin-instore">
+      <div class="admin-actions"><h3>Instore Pickup Ledger</h3></div>
+      <div style="background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:16px;">
+        <div class="form-grid" style="grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;">
+          <div class="form-group" style="margin:0;">
+            <label style="font-size:12px;">Product *</label>
+            <select id="instore-product" onchange="onInstoreProductChange()" style="width:100%;padding:8px;border-radius:8px;border:1px solid var(--border);"></select>
+          </div>
+          <div class="form-group" style="margin:0;">
+            <label style="font-size:12px;">Quantity *</label>
+            <input type="number" id="instore-qty" min="1" step="1" value="1" style="width:100%;">
+          </div>
+          <div class="form-group" style="margin:0;">
+            <label style="font-size:12px;">Selling price / unit (₹) *</label>
+            <input type="number" id="instore-price" min="0" step="1" placeholder="Auto from product price" style="width:100%;">
+          </div>
+          <div class="form-group" style="margin:0;display:flex;align-items:flex-end;">
+            <button type="button" class="btn-new" onclick="void addInstoreSaleEntry()">Add Entry</button>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:10px;flex-wrap:wrap;">
+        <div style="font-size:13px;color:var(--text-muted);">Saved pickup sales</div>
+        <div style="font-size:14px;font-weight:700;color:var(--ocean-dark);">Total sold: <span id="instore-total-sum">₹0</span></div>
+      </div>
+      <table class="admin-table">
+        <thead><tr><th>Time</th><th>Product</th><th>Qty</th><th>Rate</th><th>Line Total</th><th></th></tr></thead>
+        <tbody id="instore-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- Orders -->
+    <div class="admin-tab-content" id="admin-orders">
+      <div class="admin-actions"><h3>All Orders</h3></div>
+      <table class="admin-table">
+        <thead><tr><th>Order ID</th><th>Customer</th><th>Phone</th><th>Total</th><th>Payment</th><th>Date</th><th>Status</th><th>View</th></tr></thead>
+        <tbody id="orders-tbody"></tbody>
+      </table>
+    </div>
+
+    <!-- Messages -->
+    <div class="admin-tab-content" id="admin-messages">
+      <div class="admin-actions"><h3>Contact messages</h3></div>
+      <table class="admin-table">
+        <thead><tr><th>ID</th><th>Date</th><th>Name</th><th>Email</th><th>Phone</th><th>Message</th></tr></thead>
+        <tbody id="messages-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== MODALS ==================== -->
+<!-- Product Modal -->
+<div class="modal-overlay" id="product-modal">
+  <div class="modal">
+    <h3 id="product-modal-title">Add New Product</h3>
+    <input type="hidden" id="pm-id">
+    <div class="form-group" style="margin-bottom:14px;"><label>Product Name *</label><input type="text" id="pm-name" placeholder="e.g. Crystal Clear Epoxy Resin"></div>
+    <div class="form-grid" style="margin-bottom:14px;">
+      <div class="form-group full"><label>Primary category *</label>
+        <select id="pm-cat" onchange="onPmPrimaryCategoryChange()" style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:8px;font-size:14px;"></select>
+      </div>
+      <div class="form-group full" id="pm-extra-cats-block" style="margin-bottom:14px;">
+        <label style="display:block;margin-bottom:8px;">Also show under (optional)</label>
+        <div id="pm-extra-cats-wrap" style="display:flex;flex-wrap:wrap;gap:10px 16px;font-size:13px;"></div>
+        <p style="font-size:11px;color:var(--text-muted);margin:8px 0 0;line-height:1.45;">Product still has one primary category above; tick extra shop filters / home tiles where it should also appear.</p>
+      </div>
+      <div class="form-group"><label>Price (₹) *</label><input type="number" id="pm-price" placeholder="450"></div>
+      <div class="form-group"><label>Display MRP (₹)</label><input type="number" id="pm-compare-price" placeholder="500"></div>
+      <div class="form-group"><label>Discount %</label><input type="number" id="pm-discount-pct" min="0" max="95" step="1" placeholder="e.g. 20"></div>
+      <div class="form-group"><label>Weight (kg) *</label><input type="number" id="pm-weight" step="0.01" min="0.01" placeholder="0.5" title="Used for shipping calculation"></div>
+      <div class="form-group"><label>Stock quantity *</label><input type="number" id="pm-stock-qty" min="0" step="1" placeholder="10"></div>
+      <div class="form-group"><label>Extra shipping (₹ / unit)</label><input type="number" id="pm-extra-shipping" min="0" step="1" placeholder="0" title="Added on top of weight-based shipping for each unit in the cart"></div>
+    </div>
+    <div class="form-group" style="margin-bottom:12px;">
+      <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+        <input type="checkbox" id="pm-has-sizes" onchange="pmToggleSizesEditor()">
+        <span>Multiple sizes / options (different price, stock, shipping weight &amp; extra ₹)</span>
+      </label>
+    </div>
+    <div id="pm-sizes-editor-wrap" style="display:none;margin-bottom:14px;padding:12px;background:var(--sand);border-radius:var(--radius);border:1px solid var(--border);">
+      <p style="font-size:12px;color:var(--text-muted);margin:0 0 10px;line-height:1.5;"><strong>Weight (kg)</strong> is used with the same state-based weight shipping as other products. <strong>Extra ₹</strong> adds on top of that rate (per unit). Leave weight blank to use the product <strong>Weight (kg)</strong> above.</p>
+      <div style="display:grid;grid-template-columns:minmax(100px,1fr) 56px 52px 56px 56px 28px;gap:6px;font-size:11px;font-weight:600;color:var(--ocean-dark);margin-bottom:4px;">
+        <span>Label</span><span>₹</span><span>Stock</span><span>kg</span><span>+₹</span><span></span>
+      </div>
+      <div id="pm-size-rows"></div>
+      <button type="button" class="btn-new" onclick="window.pmAddSizeRowBlank()" style="margin-top:8px;font-size:13px;padding:6px 12px;background:var(--ocean-dark);">+ Add size</button>
+    </div>
+    <div class="form-group" style="margin-bottom:14px;"><label>Description</label><textarea id="pm-desc" rows="3" style="resize:vertical;" placeholder="Brief product description..."></textarea></div>
+    <div class="form-group" style="margin-bottom:14px;">
+      <label>Product Image</label>
+      <input type="file" id="pm-img-file" accept="image/*" onchange="previewProductImg(event)" style="margin-bottom:8px;">
+      <input type="text" id="pm-img-url" placeholder="Or paste image URL here" oninput="document.getElementById('pm-img-preview').src=this.value||''">
+      <div style="margin-top:10px;display:flex;align-items:center;gap:12px;">
+        <div id="pm-img-preview-wrap" style="width:80px;height:80px;background:var(--sand);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border);">
+          <img id="pm-img-preview" src="" alt="" style="width:100%;height:100%;object-fit:cover;display:none;">
+          <span id="pm-img-icon" style="font-size:28px;">📦</span>
+        </div>
+        <span style="font-size:12px;color:var(--text-muted);">Upload image to Supabase Storage (max 1 MB), or paste existing public image URL</span>
+      </div>
+    </div>
+    <div style="font-size:12px;color:var(--text-muted);margin-bottom:8px;">Stock is auto-marked as in stock when quantity is greater than 0.</div>
+    <div class="modal-footer">
+      <button type="button" class="btn-cancel" onclick="closeModal('product-modal')">Cancel</button>
+      <button type="button" class="btn-save" onclick="void saveProduct()">Save Product</button>
+    </div>
+  </div>
+</div>
+
+<!-- Order Detail Modal -->
+<div class="modal-overlay" id="order-modal">
+  <div class="modal">
+    <h3>Order Details</h3>
+    <div id="order-modal-content"></div>
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeModal('order-modal')">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Confirm Modal -->
+<div class="modal-overlay" id="delete-modal">
+  <div class="modal" style="max-width:380px;">
+    <h3>Delete Product?</h3>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px;">This action cannot be undone. The product will be permanently removed.</p>
+    <div class="modal-footer">
+      <button class="btn-cancel" onclick="closeModal('delete-modal')">Cancel</button>
+      <button class="btn-save" style="background:var(--danger);" onclick="void confirmDelete()">Delete</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="policy-modal">
+  <div class="modal" style="max-width:640px;">
+    <h3>Important Order Policy</h3>
+    <ul class="policy-list">
+      <li>Orders will be dispatched the same business day if placed before 10:00 AM. Orders placed after 10:00 AM are dispatched the next business day.</li>
+      <li>For customised orders, DM us on WhatsApp: <strong>7695976223</strong>.</li>
+      <li>A 360° unboxing video is mandatory for any claim. Claims without unboxing video will not be entertained.</li>
+      <li><strong>No COD / Return / Refund / Exchange</strong>.</li>
+    </ul>
+    <div class="modal-footer">
+      <button type="button" class="btn-cancel" onclick="closeModal('policy-modal')">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="store-logic.js"></script>
+</body>
+</html>

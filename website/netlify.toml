@@ -1,0 +1,8 @@
+# If Netlify "base directory" is `website`, this file applies.
+# If base is the repo root, use ../netlify.toml (publish = website, functions = website/netlify/functions).
+
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"

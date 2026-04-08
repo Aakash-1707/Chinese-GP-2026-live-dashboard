@@ -1,0 +1,134 @@
+RESIN RAW MATERIALS — SUPABASE + EMAILJS (store-logic.js)
+==========================================================
+
+You cannot finish this from code alone: create accounts and paste keys into
+`store-logic.js` (lines 5–10), then re-upload the `website` folder to Netlify.
+
+PART 1 — SUPABASE
+-----------------
+1. https://supabase.com → New project.
+2. SQL Editor → paste all of `supabase-setup.sql` → Run.
+3. Authentication → Providers → enable Email.
+4. Authentication → Users → Add user → your admin email + strong password.
+5. Project Settings → API → copy Project URL and anon public key into:
+     RRM_SUPABASE_URL
+     RRM_SUPABASE_ANON_KEY
+
+Admin panel: open your site with #admin and sign in with that Supabase EMAIL
+and password. (Demo login admin / resin2024 still works only when Supabase URL
+is left empty.)
+
+PART 2 — EMAILJS (order + contact notifications)
+------------------------------------------------
+1. https://www.emailjs.com → Sign up.
+2. Email Services → Add service (e.g. Gmail) and connect your inbox.
+3. Email Templates → Create two templates:
+
+   TEMPLATE A — New order (ID stored in EMAILJS_TEMPLATE_ORDER)
+   Suggested subject: New order {{order_id}}
+   Body (example):
+     Order {{order_id}}
+     Customer: {{customer_name}}
+     Phone: {{phone}}
+     Email: {{email}}
+     Address: {{address}}
+     Payment: {{payment}}
+     Total: ₹{{total}}
+
+     Items:
+     {{items_detail}}
+
+   Use these variable names exactly (they match the code):
+     order_id, customer_name, phone, email, address, payment, total,
+     items_detail, merchant_email, reply_to
+
+   TEMPLATE B — Contact form (ID stored in EMAILJS_TEMPLATE_CONTACT)
+   Suggested subject: Website message from {{name}}
+   Body:
+     From: {{name}} <{{email}}>
+     Phone: {{phone}}
+
+     {{message}}
+
+   Variable names: name, email, phone, message, merchant_email, reply_to
+
+   TEMPLATE C — Order confirmation to customer (ID in EMAILJS_TEMPLATE_ORDER_CONFIRM)
+   Suggested subject: Your order {{order_id}} — Resin Raw Materials TN
+   Body (example):
+     Hi {{customer_name}},
+
+     Thanks for your order. Here is a summary:
+
+     Order ID: {{order_id}}
+     Status: {{order_status}}
+     Total: ₹{{total}}
+     Payment: {{payment}}
+
+     Delivery address:
+     {{address}}
+
+     Items:
+     {{items_detail}}
+
+     Questions? Reply to this email.
+
+   Variable names (match the code exactly):
+     to_email, order_id, customer_name, phone, email, address, payment, total,
+     items_detail, order_status, reply_to
+
+   Important: In the template settings, set "To Email" to {{to_email}} so the
+   message goes to the customer. (Your EmailJS plan must allow sending to
+   arbitrary recipients; Gmail personal services often do.)
+
+4. Account → API keys → copy Public Key.
+5. Put in store-logic.js:
+     EMAILJS_PUBLIC_KEY
+     EMAILJS_SERVICE_ID   (from Email Services)
+     EMAILJS_TEMPLATE_ORDER
+     EMAILJS_TEMPLATE_ORDER_CONFIRM   (customer confirmation; leave '' to skip)
+     EMAILJS_TEMPLATE_CONTACT
+
+6. In each template, set “To Email” to your address (or use {{merchant_email}}
+   if your EmailJS plan supports dynamic recipient — otherwise hard-code
+   preservingmemories2022@gmail.com in the template “To” field).
+
+MERCHANT_NOTIFY_EMAIL is used as a template variable; the important part is
+that your template actually sends TO your real inbox.
+
+PART 3 — RAZORPAY (checkout — replaces manual UPI/QR on the site)
+-----------------------------------------------------------------
+1. Razorpay Dashboard → Account & Settings → API Keys:
+   - Use Test keys while your account is in Test Mode (no real money).
+   - After KYC approval, switch to Live Mode and use Live keys on Netlify.
+
+2. Netlify → Site → Project configuration → Environment variables (Production
+   and Preview if needed):
+     RAZORPAY_KEY_ID       = Key Id from Razorpay
+     RAZORPAY_KEY_SECRET   = Key Secret (never put this in store-logic.js)
+     SUPABASE_URL          = same as RRM_SUPABASE_URL (or your project URL)
+     SUPABASE_SERVICE_ROLE_KEY = service_role key from Supabase Project Settings → API
+       (used only by Netlify function `razorpay-verify-payment` to set order
+       status to Paid after signature verification — never expose in the browser)
+
+3. Redeploy the site after adding variables. Checkout calls:
+     POST /.netlify/functions/razorpay-create-order
+     POST /.netlify/functions/razorpay-verify-payment
+   If keys are missing, customers see an error and the pending order is removed.
+
+PART 4 — DEPLOY
+---------------
+Upload to Netlify (Drop) the whole `website` folder including:
+  resin_rawmaterials_tn.html, store-logic.js, assets/, _redirects, netlify/, etc.
+
+PART 5 — BEHAVIOUR
+------------------
+- With Supabase keys set: catalog, orders, and contact rows are stored in the
+  database; admin reads them after Supabase login.
+- Checkout is Razorpay only: order is created as Pending payment, then the
+  Razorpay widget opens; after success the verify function marks the order Paid
+  in Supabase and the confirmation screen is shown.
+- Orders still save a copy in the customer’s browser (localStorage) for their
+  confirmation screen.
+- EmailJS runs in the browser: if the user blocks scripts or EmailJS fails,
+  Supabase data is still stored; email is best-effort.
+- Never put Supabase service_role key in store-logic.js — only the anon key.

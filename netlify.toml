@@ -1,0 +1,18 @@
+# Netlify: repository root is this folder; the storefront lives in `website/`.
+[build]
+  publish = "website"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+
+# Serve the storefront at site root (no index.html).
+[[redirects]]
+  from = "/"
+  to = "/resin_rawmaterials_tn.html"
+  status = 200
+
+[functions]
+  directory = "website/netlify/functions"
